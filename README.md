@@ -1,5 +1,5 @@
-# component-creator
+# 苹果登录验证客户端
 
 ```
-composer create-project hyperf/component-creator
+composer require kydev/apple-signin-client
 ```
