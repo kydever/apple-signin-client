@@ -19,7 +19,7 @@ class ASClient
     {
         $client = new Client([
             'base_uri' => 'https://appleid.apple.com/',
-            'timeout' => 2,
+            'timeout' => 10,
         ]);
 
         $body = (string) $client->get('auth/keys')->getBody();
