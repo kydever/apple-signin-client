@@ -22,6 +22,7 @@ class ASClient
         ]);
 
         $body = (string) $client->get('auth/keys')->getBody();
+
         return json_decode($body, true, flags: JSON_THROW_ON_ERROR);
     }
 }
