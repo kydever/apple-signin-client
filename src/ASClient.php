@@ -19,9 +19,11 @@ class ASClient
     {
         $client = new Client([
             'base_uri' => 'https://appleid.apple.com/',
+            'timeout' => 2,
         ]);
 
         $body = (string) $client->get('auth/keys')->getBody();
+
         return json_decode($body, true, flags: JSON_THROW_ON_ERROR);
     }
 }
